@@ -1,4 +1,4 @@
-# [Next.js 14 : Criação de uma aplicação Full stack)
+# [Next.js 14 : Criação de uma aplicação Full stack)]
 
 .
 
