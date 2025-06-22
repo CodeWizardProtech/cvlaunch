@@ -12,7 +12,7 @@ const fontSans = Nunito_Sans({ subsets: ["latin"], variable: "--font-sans" });
 const fontTitle = Nunito({ subsets: ["latin"], variable: "--font-title" });
 
 export const metadata: Metadata = {
-  title: "ResumeCraft",
+  title: "CVLAUNCH",
   icons: {
     icon: "/favicon.svg",
   }
