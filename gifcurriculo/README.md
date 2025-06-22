@@ -148,7 +148,7 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 Para dúvidas ou suporte, entre em contato através de:
 - Email: [marcosdo337@gmail.com]
-- Issues do GitHub: [link-para-issues]
+- Issues do GitHub: [------------]
 
 ---
 
