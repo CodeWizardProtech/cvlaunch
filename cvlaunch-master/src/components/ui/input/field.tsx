@@ -23,7 +23,7 @@ export const InputField = ({ label, name, required, containerClassName, extraCon
       }}
       render={({ field, fieldState }) => (
         <FieldWrapper label={label} className={containerClassName} error={fieldState?.error}>
-          <Input {...props} {...field} />
+          <Input {...props} {...field} value={field.value ?? ""} />
           {extraContent && extraContent(field.value)}
         </FieldWrapper>
       )}
