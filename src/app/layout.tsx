@@ -12,10 +12,46 @@ const fontSans = Nunito_Sans({ subsets: ["latin"], variable: "--font-sans" });
 const fontTitle = Nunito({ subsets: ["latin"], variable: "--font-title" });
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: "CVLAUNCH",
   icons: {
     icon: "/favicon.svg",
   }
+=======
+  title: {
+    default: "cvlaunch: Crie seu currículo de forma fácil e gratuita",
+    template: "%s | cvlaunch",
+  },
+  description:
+    "Crie currículos profissionais de forma rápida e fácil com nossos modelos gratuitos. O cvlaunch ajuda você a se destacar no mercado de trabalho.",
+  keywords: [
+    "criador de currículos",
+    "gerador de currículos",
+    "currículo online",
+    "modelos de currículo",
+    "currículo grátis",
+    "cvlaunch",
+  ],
+  icons: {
+    icon: "/favicon.svg",
+  },
+  openGraph: {
+    title: "cvlaunch: Crie seu currículo de forma fácil e gratuita",
+    description:
+      "Crie currículos profissionais de forma rápida e fácil com nossos modelos gratuitos.",
+    url: "https://cvlaunch.example.com",
+    siteName: "cvlaunch",
+    images: [
+      {
+        url: "https://cvlaunch.example.com/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
+>>>>>>> 72f1b14 (atualizado)
 };
 
 setDefaultOptions({ locale: ptBR });
@@ -26,7 +62,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+<<<<<<< HEAD
     <html lang="pt-BR">
+=======
+    <html lang="pt-BR" suppressHydrationWarning>
+>>>>>>> 72f1b14 (atualizado)
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -34,9 +74,13 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+<<<<<<< HEAD
         <ClientProviders>
           {children}
         </ClientProviders>
+=======
+        <ClientProviders>{children}</ClientProviders>
+>>>>>>> 72f1b14 (atualizado)
       </body>
     </html>
   );

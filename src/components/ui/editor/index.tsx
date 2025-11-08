@@ -57,7 +57,11 @@ export const Editor = ({ value, onChange, className }: EditorProps) => {
         editor?.commands.setContent(value);
       }, 0);
     }
+<<<<<<< HEAD
   }, [value])
+=======
+  }, [value, editor])
+>>>>>>> 72f1b14 (atualizado)
 
   return (
     <div className={cn(

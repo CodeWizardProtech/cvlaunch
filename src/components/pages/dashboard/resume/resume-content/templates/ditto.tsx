@@ -21,7 +21,11 @@ export const Ditto = ({ data }: BaseResumeProps) => {
     <div className="w-full h-full p-4">
       <div className="text-center">
         {content.image.url && content.image.visible && (
+<<<<<<< HEAD
           <img src={content.image.url} className="w-24 h-24 mx-auto mb-2" />
+=======
+          <img src={content.image.url} alt={infos.fullName} className="w-24 h-24 mx-auto mb-2" />
+>>>>>>> 72f1b14 (atualizado)
         )}
         <Element className="text-2xl text-center font-bold">
           {infos.fullName}

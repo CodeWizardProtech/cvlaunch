@@ -23,7 +23,11 @@ export default function LoginPage() {
           width={1000}
           height={800}
           src="/images/auth-bg.webp"
+<<<<<<< HEAD
           alt="Escritório com vários currículos espalhados por todas as mesas."
+=======
+          alt="Escritório com vários currículos espalhados por todas as mesas, representando a criação de currículos com o cvlaunch."
+>>>>>>> 72f1b14 (atualizado)
           className="w-full h-full object-cover"
           quality={100}
         />
@@ -31,7 +35,11 @@ export default function LoginPage() {
 
       <form className="p-10 flex justify-center flex-col" action={handleLogin}>
         <div className="flex items-center justify-between mb-10">
+<<<<<<< HEAD
           <Logo className="max-w-[185px]" />
+=======
+          <Logo className="max-w-[190px]" />
+>>>>>>> 72f1b14 (atualizado)
 
           <ThemeToggle />
         </div>

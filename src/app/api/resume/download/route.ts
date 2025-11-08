@@ -1,12 +1,20 @@
+<<<<<<< HEAD
 import { formatTailwindHTML } from "@/lib/utils";
 
 import puppeteer from "puppeteer";
 import puppeteerCore from "puppeteer-core";
 import chromium from "@sparticuz/chromium";
+=======
+// Configuração para Vercel (plano gratuito)
+export const maxDuration = 10;
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+>>>>>>> 72f1b14 (atualizado)
 
 export const POST = async (request: Request) => {
   try {
     const body = await request.json();
+<<<<<<< HEAD
 
     const { html, structure } = body;
 
@@ -58,3 +66,32 @@ export const POST = async (request: Request) => {
     )
   }
 }
+=======
+    const { html } = body;
+
+    if (!html) {
+      return Response.json(
+        { message: "HTML não fornecido" },
+        { status: 400 }
+      );
+    }
+
+    // Retorna o HTML limpo para processamento no frontend
+    return Response.json({ 
+      success: true,
+      html: html 
+    });
+    
+  } catch (error) {
+    console.error("PDF Generation Error:", error);
+    
+    return Response.json(
+      {
+        message: "Erro ao processar PDF",
+        error: error instanceof Error ? error.message : "Erro desconhecido",
+      },
+      { status: 500 }
+    );
+  }
+};
+>>>>>>> 72f1b14 (atualizado)

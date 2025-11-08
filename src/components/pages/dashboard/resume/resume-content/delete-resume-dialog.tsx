@@ -17,11 +17,23 @@ export const DeleteResumeDialog = (props: BaseDialogProps) => {
   const resumeId = params.id as string;
 
   const { mutate: handleDeleteResume, isPending } = useMutation({
+<<<<<<< HEAD
     mutationFn: deleteResume,
+=======
+    // Wrap server action in a client function to avoid passing Server Action directly to React Query
+    mutationFn: async (id: string) => await deleteResume(id),
+>>>>>>> 72f1b14 (atualizado)
     onSuccess: () => {
       toast.success("Currículo deletado com sucesso.");
       setOpen(false);
       router.push("/dashboard/resumes");
+<<<<<<< HEAD
+=======
+    },
+    onError: (err: unknown) => {
+      const message = err instanceof Error ? err.message : "Erro ao deletar currículo.";
+      toast.error(message);
+>>>>>>> 72f1b14 (atualizado)
     }
   })
 

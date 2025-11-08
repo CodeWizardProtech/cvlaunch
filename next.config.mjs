@@ -1,10 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+<<<<<<< HEAD
   experimental: {
     serverComponentsExternalPackages: [
       "puppeteer-core",
       "@sparticuz/chromium",
     ]
+=======
+  serverExternalPackages: [
+    "puppeteer-core",
+    "@sparticuz/chromium",
+  ],
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.simpleicons.org',
+      },
+    ],
+>>>>>>> 72f1b14 (atualizado)
   },
   reactStrictMode: false,
   webpack(config) {
